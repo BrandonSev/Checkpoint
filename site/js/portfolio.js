@@ -19,3 +19,7 @@ button.addEventListener("click", () => {
     item.style.color = "#750ff7";
   });
 });
+const link = document.querySelectorAll("a");
+link.forEach((item) => {
+  item.style.color = "#750ff7";
+});
