@@ -132,4 +132,11 @@ button {
   .desktop img {
     display: block;
   }
+  .skills {
+    display: flex;
+    justify-content: center;
+  }
+  .skills .column {
+    width: 50%;
+  }
 }
