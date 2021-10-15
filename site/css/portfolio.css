@@ -111,3 +111,17 @@ button {
 }
 
 /* CODE HERE */
+.navbar {
+  align-items: center;
+  justify-content: space-between;
+}
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.presentation {
+  display: flex;
+  flex-direction: column;
+}
