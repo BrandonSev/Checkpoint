@@ -128,15 +128,29 @@ button {
 .desktop img {
   display: none;
 }
+.skills {
+  display: flex;
+  flex-direction: column;
+}
+.skills :first-child {
+  order: 2;
+}
 @media screen and (min-width: 700px) {
   .desktop img {
     display: block;
   }
   .skills {
     display: flex;
+    flex-direction: row;
     justify-content: center;
   }
   .skills .column {
     width: 50%;
+  }
+  .skills :first-child {
+    order: 1;
+  }
+  .skills :last-child {
+    order: 2;
   }
 }
