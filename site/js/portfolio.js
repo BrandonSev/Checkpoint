@@ -7,7 +7,6 @@ const button = document.querySelector(".presentation button");
 const name = document.querySelector("#name");
 const descriptionBg = document.querySelectorAll(".pink-bg");
 const pinkText = document.querySelectorAll(".pink-text");
-console.log(descriptionBg);
 button.addEventListener("click", () => {
   const namePrompt = prompt("Enter your name");
   name.innerHtml = namePrompt;
@@ -22,4 +21,9 @@ button.addEventListener("click", () => {
 const link = document.querySelectorAll("a");
 link.forEach((item) => {
   item.style.color = "#750ff7";
+});
+const buttonModifyMe = document.querySelector("#modify-me");
+const listDevTools = document.querySelector("#front-dev-tools");
+buttonModifyMe.addEventListener("click", () => {
+  listDevTools.innerHTML = "<li>VSCode</li><li>Github</li><li>Terminal</li>";
 });
