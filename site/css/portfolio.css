@@ -150,7 +150,4 @@ button {
   .skills :first-child {
     order: 1;
   }
-  .skills :last-child {
-    order: 2;
-  }
 }
