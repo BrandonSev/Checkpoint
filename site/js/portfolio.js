@@ -27,3 +27,12 @@ const listDevTools = document.querySelector("#front-dev-tools");
 buttonModifyMe.addEventListener("click", () => {
   listDevTools.innerHTML = "<li>VSCode</li><li>Github</li><li>Terminal</li>";
 });
+const addDevTools = document.querySelector("#add-tools");
+const devToolsList = document.querySelector("#dev-tools-back-list");
+const toolsName = document.querySelector("#tools-name");
+addDevTools.addEventListener("click", () => {
+  const item = document.createElement("li");
+  item.innerText = toolsName.value;
+  devToolsList.appendChild(item);
+  toolsName.value = "";
+});
